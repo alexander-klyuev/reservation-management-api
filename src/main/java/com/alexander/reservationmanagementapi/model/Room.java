@@ -1,8 +1,10 @@
 package com.alexander.reservationmanagementapi.model;
 
+import com.alexander.reservationmanagementapi.practice.generics.Identifiable;
+
 import java.util.Objects;
 
-public class Room {
+public class Room implements Identifiable<Long> {
     private final Long id;
     private final String name;
     private final int capacity;
@@ -13,6 +15,7 @@ public class Room {
         this.capacity = capacity;
     }
 
+    @Override
     public Long getId() {
         return id;
     }

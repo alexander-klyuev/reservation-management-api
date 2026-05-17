@@ -1,8 +1,10 @@
 package com.alexander.reservationmanagementapi.model;
 
+import com.alexander.reservationmanagementapi.practice.generics.Identifiable;
+
 import java.util.Objects;
 
-public class User {
+public class User implements Identifiable<Long> {
     private final Long id;
     private final String email;
     private final String fullName;
@@ -13,6 +15,7 @@ public class User {
         this.fullName = fullName;
     }
 
+    @Override
     public Long getId() {
         return id;
     }
