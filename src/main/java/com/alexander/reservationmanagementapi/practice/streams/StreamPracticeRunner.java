@@ -102,7 +102,7 @@ public class StreamPracticeRunner {
         System.out.println();
 
         countReservationsByUser(reservations).forEach((key, value) ->
-            System.out.println(key + ": " + value)
+                System.out.println(key + ": " + value)
         );
         System.out.println();
 
